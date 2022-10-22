@@ -1,4 +1,4 @@
-const { src, dest, watch, parallel, series } = require('gulp');
+const { src, dest, watch, parallel, series, task } = require('gulp');
 
 const scss         = require('gulp-sass')(require('sass'));
 const concat       = require('gulp-concat');
@@ -7,6 +7,7 @@ const uglify       = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin     = require('gulp-imagemin');
 const del          = require('del');
+const webp         = require('gulp-webp');
 
 
 function browsersync() {
@@ -15,6 +16,12 @@ function browsersync() {
       baseDir: 'app/'
     }
   });
+}
+
+function convertWebp() {
+  return src('app/images/**/*.jpg')
+    .pipe(webp())
+    .pipe(dest('app/images/webp'))
 }
 
 function cleanDist() {
@@ -88,8 +95,9 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.convertWebp = convertWebp;
 
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, convertWebp, build);
 exports.default = parallel(styles, browsersync, watching, scripts);
 
