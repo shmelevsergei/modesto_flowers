@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.min.css">
+   <script src="js/main.min.js" defer></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__wrapper">
+            <div class="header__navigation">
+               <a href="#" class="header__logo"><img src="images/logo.svg" alt="logo"></a>
+               <nav class="header__menu">
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Магазины</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Контакты</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">О нас</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+
+            <a class="header__contacts" href="tel:+36787547894">+3 67 8754 7894</a>
+
+            <div class="header__lang">
+               <button class="header__lang-button js-lang-button is-active">Ru</button>
+               <button class="header__lang-button js-lang-button">Eng</button>
+            </div>
+            <div class="header__buttons">
+               <a class="header__buttons-login" href="#">Войти</a>
+               <a class="header__buttons-create" href="#">Создать аккаунт</a>
+            </div>
+
+            <div class="header__burger js-burger">
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="promo">
+      <div class="promo__bg">
+         <img src="images/bg-first-screen.svg" alt="promo">
+      </div>
+
+      <div class="promo__wrapper">
+         <h1 class="promo__title">
+            Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!
+         </h1>
+         <p class="promo__suptitle">
+            Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!
+         </p>
+         <div class="promo__buttons">
+            <a href="#" class="promo__buttons-left _btn">Начать покупать</a>
+            <a href="#" class="promo__buttons-right _btn">Начать продавать</a>
+         </div>
+      </div>
+
+   </section>
+
+   <section class="register">
+      <div class="register__bg"><img src="images/bg-second-screen.svg" alt="register"></div>
+      <div class="register__form">
+         <div class="register__form-bg"><img src="images/bg-form.svg" alt="form"></div>
+         <div class="register__form-wrapper">
+            <div class="register__form-text">
+               <h2 class="register__form-title">Заполните форму и начните развивать свой бизнес прямо сейчас!</h2>
+               <p class="register__form-suptitle">Регистрация на нашем сайте занимает несколько минут, просим ответить
+                  на
+                  все вопросы полностью и корректно! После
+                  подтверждения регистрации вы попадёте в систему, где большинство процессов автоматизированы, что
+                  сэкономит ваше время и
+                  деньги!</p>
+            </div>
+            <form action="" class="register__form-form form">
+               <div class="form__wrapper js-form">
+                  <div class="form__col">
+                     <div class="form__item">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" name="name" id="name" placeholder="Фролова Александра Васильевна">
+                     </div>
+
+                     <div class="form__item">
+                        <label for="name-company">Название Компании</label>
+                        <input type="text" name="name-company" id="name-company" placeholder="ООО Атлантика">
+                     </div>
+
+                     <div class="form__item">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="flolovaalexa@com.rur">
+                     </div>
+                  </div>
+
+                  <div class="form__col">
+                     <div class="form__item">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+7 (XXX) - XXX XX XX">
+                     </div>
+
+                     <div class="form__item">
+                        <label for="promo-code">Промокод </label>
+                        <input type="text" name="promo-code" id="promo-code" placeholder="HGF864">
+                     </div>
+
+                     <button class="form__button _btn js-next" type="button">Далее</button>
+                  </div>
+               </div>
+
+               <div class="form__wrapper js-form ">
+                  <div class="form__col">
+                     <div class="form__item">
+                        <label for="password">Пароль</label>
+                        <input type="text" name="password" id="password" placeholder="Создайте пароль">
+                     </div>
+
+                     <div class="form__item">
+                        <label for="confirm">Подтвердите пароль</label>
+                        <input type="text" name="confirm" id="confirm" placeholder="Повторите пароль">
+                     </div>
+
+                     <div class="form__capcha _desktop">
+                        <img src="images/capcha.svg" alt="capcha">
+                     </div>
+
+                     <div class="form__item _mobile">
+                        <label for="capcha">Введите символы из картинки</label>
+                        <input type="text" name="capcha" id="capcha" placeholder="Код из картинки">
+                     </div>
+                  </div>
+
+
+                  <div class="form__col">
+
+                     <div class="form__capcha _mobile">
+                        <img src="images/capcha.svg" alt="capcha">
+                     </div>
+
+                     <div class="form__item _desktop">
+                        <label for="capcha">Введите символы из картинки</label>
+                        <input type="text" name="capcha" id="capcha" placeholder="Код из картинки">
+                     </div>
+
+                     <div class="form__buttons">
+                        <button class="form__buttons-left _btn js-prev" type="button">Назад</button>
+                        <button class="form__buttons-right _btn" type="submit">Подтвердить</button>
+                     </div>
+
+                     <div class="form__checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Я даю согласие на обработку моих персональных данных и правовых
+                           документов</label>
+                     </div>
+                  </div>
+
+               </div>
+
+            </form>
+         </div>
+
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__wrapper">
+
+            <div class="footer__left">
+               <div class="footer__office">
+                  <h3 class="footer__office-title footer__title">Наши офисы</h3>
+                  <div class="footer__office-content">
+                     <address>Московский офис <br>
+                        +7 455 267-89-07 br
+                        Берсеневский пер., д. 56, стр. 4,
+                        6-й эт., Москва, 567754</address>
+                     <address>Ростовский офис <br>
+                        +7 878 888-01-67 <br>
+                        Буденовский пр-т, д. 84, 6-й эт.,
+                        Ростов-на-Дону, 679965</address>
+                  </div>
+               </div>
+
+               <div class="footer__social">
+                  <h3 class="footer__social-title footer__title">Мы в соц сетях</h3>
+                  <ul class="footer__social-list">
+                     <li class="footer__social-item">
+                        <a href="#">Instagram</a>
+                     </li>
+                     <li class="footer__social-item">
+                        <a href="#">Facebook</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="footer__copy _table">
+                  Авторские права 2008-2022 M-flowers.com
+               </div>
+            </div>
+
+            <div class="footer__contacts">
+               <h3 class="footer__contacts-title footer__title">Свяжитесь с нами</h3>
+               <div class="footer__contacts-wrapper">
+                  <a class="footer__contacts-phone" href="tel:+36787547894">+3 67 8754 7894</a>
+                  <a class="footer__contacts-mail" href="mailto:mflowers@flo.com">mflowers@flo.com</a>
+                  <button class="footer__contacts-button _btn" type="button">Написать<img src="images/icons/mail.svg"
+                        alt="Написать"></button>
+               </div>
+            </div>
+            <div class="footer__copy _mobile">
+               Авторские права 2008-2022 M-flowers.com
+            </div>
+         </div>
+
+      </div>
+   </footer>
+</body>
+
+</html>
