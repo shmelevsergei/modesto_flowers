@@ -6,10 +6,31 @@
    list-style: none;
 }
 
+* a {
+   color: inherit;
+   font-family: inherit;
+   font-weight: inherit;
+   cursor: pointer;
+   display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: inherit;
+   font-family: inherit;
+   font-weight: inherit;
+   margin: 0;
+   padding: 0;
+}
+
 img {
    width: 100%;
    height: 100%;
-   object-fit: contain;
+   object-fit: cover;
 }
 
 button {
@@ -17,4 +38,26 @@ button {
    background: transparent;
    border: none;
    cursor: pointer;
+}
+
+input {
+   border: none;
+   background: transparent;
+   color: inherit;
+   font-size: inherit;
+   font-weight: inherit;
+   outline: none;
+
+   &::placeholder {
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+   }
+}
+
+address {
+   font-style: normal;
+   color: inherit;
+   font-family: inherit;
+   font-weight: inherit;
 }

@@ -1,0 +1,133 @@
+.footer {
+   background-color: var(--colorPrimary);
+   color: var(--colorSecond);
+
+   &__wrapper {
+      display: flex;
+      padding: 80px 0;
+
+      @media screen and (min-width: 320px) and (max-width: 1366px) {
+         padding: 32px 0;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 767.98px) {
+         flex-wrap: wrap;
+         flex-direction: column;
+
+      }
+   }
+
+   &__title {
+      font-family: var(--marmelad);
+      font-size: 24px;
+      line-height: 29px;
+   }
+
+   &__left {
+      display: flex;
+      margin-right: auto;
+
+      @media screen and (min-width: 320px) and (max-width: 1366px) {
+         flex-direction: column;
+         gap: 48px;
+      }
+   }
+
+   &__office {
+      margin-right: 229px;
+
+      @media screen and (min-width: 320px) and (max-width: 767.98px) {
+         margin-right: 0;
+      }
+
+      &-content {
+         display: flex;
+         margin-top: 24px;
+         gap: 40px;
+
+         @media screen and (min-width: 320px) and (max-width: 1366px) {
+            flex-direction: column;
+         }
+
+         address {
+            max-width: 275px;
+            line-height: 21px;
+         }
+      }
+   }
+
+   &__social {
+
+      &-list {
+         margin-top: 24px;
+      }
+
+      &-item {
+         margin-bottom: 16px;
+      }
+   }
+
+   &__copy {
+      font-size: 12px;
+      line-height: 14px;
+      color: #B9B3B3;
+      display: none;
+
+      &._table {
+         @media screen and (min-width: 768px) and (max-width: 1366px) {
+            display: block;
+         }
+
+         display: none;
+      }
+
+      &._mobile {
+         display: none;
+
+         @media screen and (min-width: 320px) and (max-width: 767.98px) {
+            display: block;
+            margin-top: 48px;
+         }
+
+      }
+   }
+
+   &__contacts {
+      @media screen and (min-width: 768px) and (max-width: 1366px) {
+         margin-left: auto;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 767.98px) {
+         margin-top: 32px;
+      }
+
+      &-wrapper {
+         margin-top: 24px;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         font-size: 20px;
+         line-height: 23px;
+      }
+
+      &-button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+         padding: 12px 32px;
+         font-size: 16px;
+         line-height: 19px;
+         font-weight: 600;
+
+         @media screen and (min-width: 320px) and (max-width: 767.98px) {
+            max-width: 172px;
+         }
+
+         img {
+            width: 24px;
+            height: 24px;
+         }
+      }
+   }
+}

@@ -1,14 +1,15 @@
 :root {
-   --colorPrimary: #F8F8F8;
-   --colorLight: #F0F0F0;
-   --colorGray: #505050;
-   --colorGrayLight: #DDDDDD;
-   --colorDark: #000000;
-   --colorDarkLight: #303030;
-   --colorRed: #E24B33;
-   --colorGreen: #5B8A8F;
-   --colorYellow: #E1A661;
+   //Colors
+   --colorPrimary: #372E11;
+   --colorSecond: #FFFBED;
+   --colorAccentPrimary: #FFE182;
+   --colorAccentSecond: #EDEDED;
 
+   //Fonts
    --inter: 'Inter', sans-serif;
-   --prata: 'Prata', serif;
+   --marmelad: 'Marmelad', sans-serif;
+   --raleway: 'Raleway', sans-serif;
+   --roboto: 'Roboto', sans-serif;
+   --ptSans: 'PT Sans', sans-serif;
+
 }
